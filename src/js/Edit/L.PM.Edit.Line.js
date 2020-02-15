@@ -232,6 +232,7 @@ Edit.Line = Edit.extend({
 
     if (!this.options.preventMarkerRemoval) {
       marker.on('contextmenu', this._removeMarker, this);
+      marker.on('dblclick', this._removeMarker, this);
     }
 
     this._markerGroup.addLayer(marker);
